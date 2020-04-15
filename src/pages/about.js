@@ -3,30 +3,24 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { graphql, Link } from "gatsby"
 import BackgroundHero from "../components/BackgroundHero"
+
 import Title from "../Title"
 
-const IndexPage = ({ data }) => {
-  const content =
-    "Our professional optometrist has more than 40 years of experience. Our services include eye exams, geriatric, paediatric, prescription and sports eyewear and contact lenses. We also stock the latest fashion brands at affordable prices."
+const AboutPage = ({ data }) => {
+  const content = "Do I need an about page????"
   return (
     <Layout>
       <SEO title="Home" />
       <BackgroundHero
         img={data.img.childImageSharp.fluid}
-        title="First Eye Image"
-        styleClass="default-background"
+        title="About us"
+        styleClass="about-background"
       />
       <section className="py-5">
         <div className="container">
-          <Title title="Our story" />
           <div className="row">
             <div className="col-10 col-sm-8 mx-auto text-center">
               <p className="lead text-muted mb-5">{content}</p>
-              <Link to="/about/">
-                <button className="btn text-uppercase btn-yellow">
-                  About Page
-                </button>
-              </Link>
             </div>
           </div>
         </div>
@@ -37,7 +31,9 @@ const IndexPage = ({ data }) => {
 
 export const query = graphql`
   {
-    img: file(relativePath: { eq: "jamie-street-MoDcnVRN5JU-unsplash.jpg" }) {
+    img: file(
+      relativePath: { eq: "julian-hochgesang-whrR1WQMdBE-unsplash.jpg" }
+    ) {
       childImageSharp {
         fluid {
           ...GatsbyImageSharpFluid_tracedSVG
@@ -47,4 +43,4 @@ export const query = graphql`
   }
 `
 
-export default IndexPage
+export default AboutPage

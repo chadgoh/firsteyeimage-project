@@ -46,6 +46,11 @@ function Navbar() {
                 </li>
               )
             })}
+            <li>
+              <a href="#contact" className="nav-link text-capitalize">
+                Contact
+              </a>
+            </li>
           </ul>
         </div>
       </nav>

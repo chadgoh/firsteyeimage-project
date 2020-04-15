@@ -19,9 +19,7 @@ const IndexPage = ({ data }) => (
 
 export const query = graphql`
   {
-    img: file(
-      relativePath: { eq: "julian-hochgesang-whrR1WQMdBE-unsplash.jpg" }
-    ) {
+    img: file(relativePath: { eq: "jamie-street-MoDcnVRN5JU-unsplash.jpg" }) {
       childImageSharp {
         fluid {
           ...GatsbyImageSharpFluid_tracedSVG

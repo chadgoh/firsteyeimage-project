@@ -11,8 +11,8 @@ function Navbar() {
     },
     {
       id: 2,
-      path: "/about",
-      text: "About",
+      path: "/contact",
+      text: "Contact",
     },
   ])
 
@@ -46,11 +46,6 @@ function Navbar() {
                 </li>
               )
             })}
-            <li>
-              <a href="#contact" className="nav-link text-capitalize">
-                Contact
-              </a>
-            </li>
           </ul>
         </div>
       </nav>

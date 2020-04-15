@@ -22,9 +22,9 @@ const IndexPage = ({ data }) => {
           <div className="row">
             <div className="col-10 col-sm-8 mx-auto text-center">
               <p className="lead text-muted mb-5">{content}</p>
-              <Link to="/about/">
+              <Link to="/contact/">
                 <button className="btn text-uppercase btn-yellow">
-                  About Page
+                  Contact Us
                 </button>
               </Link>
             </div>

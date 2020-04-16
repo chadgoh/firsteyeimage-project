@@ -11,13 +11,13 @@ function Navbar() {
     },
     {
       id: 2,
-      path: "/contact",
-      text: "Contact",
+      path: "/services",
+      text: "Services",
     },
     {
       id: 3,
-      path: "/services",
-      text: "Services",
+      path: "/contact",
+      text: "Contact",
     },
   ])
 

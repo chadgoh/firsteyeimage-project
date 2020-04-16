@@ -8,17 +8,17 @@ function Footer() {
           <div className="col-12 mx-auto col-sm-6 text-yellow text-left text-capitalize">
             <p>
               <FiPhone className="mr-2" />
-              <a href="tel:+65 6123 5678" className="footer-link">
-                +65 6123 5678
+              <a href="tel:+65 6732 3180" className="footer-link">
+                +65 6732 3180
               </a>
             </p>
             <p>
               <FiMail className="mr-2" />
               <a
-                href="mailto: Firsteyesimage@gmail.com"
+                href="mailto: firsteyesimage@gmail.com"
                 className="footer-link"
               >
-                Firsteyesimage@gmail.com
+                firsteyesimage@gmail.com
               </a>
             </p>
             <p>

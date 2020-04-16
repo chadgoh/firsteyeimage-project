@@ -19,11 +19,6 @@ function Navbar() {
       path: "/services",
       text: "Services",
     },
-    {
-      id: 2,
-      path: "/services2",
-      text: "Services2",
-    },
   ])
 
   const handleNavBar = () => {

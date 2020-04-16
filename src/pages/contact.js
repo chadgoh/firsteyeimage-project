@@ -4,7 +4,7 @@ import SEO from "../components/seo"
 import { graphql, Link } from "gatsby"
 import BackgroundHero from "../components/BackgroundHero"
 import { FiPhone, FiMail, FiMapPin } from "react-icons/fi"
-import Title from "../Title"
+// import Title from "../Title"
 
 const ContactPage = ({ data }) => {
   // const content = "Do I need an about page????"
@@ -18,7 +18,7 @@ const ContactPage = ({ data }) => {
       />
       <section className="py-5">
         <div className="container">
-          <Title title="Get in touch"></Title>
+          {/* <Title title="Get in touch"></Title> */}
           <div className="row">
             <div className="col-10 col-sm-4 mx-auto text-left">
               <p>

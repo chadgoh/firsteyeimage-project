@@ -2,14 +2,12 @@ import React from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { graphql, Link } from "gatsby"
-import BackgroundHero from "../components/BackgroundHero"
-import { FiPhone, FiMail, FiMapPin } from "react-icons/fi"
-import Title from "../Title"
-import Carousel from "react-bootstrap/Carousel"
-import Img from "gatsby-image"
-import Card from "react-bootstrap/Card"
 
-const ServicesPage = ({ data }) => {
+import Title from "../Title"
+import Card from "react-bootstrap/Card"
+import Img from "gatsby-image"
+
+const Services2Page = ({ data }) => {
   // const content = "Do I need an about page????"
   console.log(data)
   return (
@@ -23,55 +21,67 @@ const ServicesPage = ({ data }) => {
       <section className="py-5">
         <div className="container">
           <Title title="Our Services"></Title>
+          <div className="row ">
+            <div className="col-10 col-sm-4 mx-auto  mb-3 d-flex">
+              <Card>
+                <Img fluid={data.img1.childImageSharp.fluid} />
+                <Card.Body>
+                  <Card.Title>
+                    <strong>Eye Examinations</strong>
+                  </Card.Title>
+                  <Card.Text>
+                    <p className="text-left" style={{ fontSize: "medium" }}>
+                      We provide comprehensive eye examinations that include:
+                    </p>
+                    <ol className="text-left" style={{ fontSize: "small" }}>
+                      <li>Prescription Checks</li>
+                      <li>Anterior Eye Examinations</li>
+                      <li>Posterior Eye Examinations</li>
+                    </ol>
+                  </Card.Text>
+                </Card.Body>
+              </Card>
+            </div>
+            <div className="col-10 col-sm-4 mx-auto  mb-3 d-flex">
+              <Card>
+                <Img fluid={data.img3.childImageSharp.fluid} />
+                <Card.Body>
+                  <Card.Title>
+                    <strong>Spectacle Services </strong>
+                  </Card.Title>
+                  <Card.Text>
+                    <p className="text-left" style={{ fontSize: "medium" }}>
+                      Prescribe customized spectacles and lenses to suit your
+                      lifestyle needs.
+                    </p>
+                  </Card.Text>
+                </Card.Body>
+              </Card>
+            </div>
+            <div className="col-10 col-sm-4 mx-auto  mb-3 d-flex">
+              <Card>
+                <Img fluid={data.img2.childImageSharp.fluid} />
+                <Card.Body>
+                  <Card.Title>
+                    <strong>Contact Lense Consultation And Fitting </strong>
+                  </Card.Title>
+                  <Card.Text>
+                    <p className="text-left" style={{ fontSize: "medium" }}>
+                      Provide and recommend the most suitable contact lenses for
+                      your eyes
+                    </p>
+                  </Card.Text>
+                </Card.Body>
+              </Card>
+            </div>
+          </div>
           <div className="row">
-            <div className="col-10 col-sm-4 mx-auto text-left">
-              <Carousel>
-                <Carousel.Item>
-                  <Img fluid={data.img1.childImageSharp.fluid} />
-                  <Carousel.Caption>
-                    <h3>First slide label</h3>
-                    <p>
-                      Nulla vitae elit libero, a pharetra augue mollis interdum.
-                    </p>
-                  </Carousel.Caption>
-                </Carousel.Item>
-
-                <Carousel.Item>
-                  <Img fluid={data.img3.childImageSharp.fluid} />
-
-                  <Carousel.Caption>
-                    <h3>Third slide label</h3>
-                    <p>
-                      Praesent commodo cursus magna, vel scelerisque nisl
-                      consectetur.
-                    </p>
-                  </Carousel.Caption>
-                </Carousel.Item>
-                <Carousel.Item>
-                  <Card style={{ width: "fluid" }}>
-                    <Img fluid={data.img2.childImageSharp.fluid} />
-                    <Card.Body>
-                      <Card.Title>Card Title</Card.Title>
-                      <Card.Text>
-                        Some quick example text to build on the card title and
-                        make up the bulk of the card's content.
-                      </Card.Text>
-                    </Card.Body>
-                  </Card>
-                </Carousel.Item>
-                <Carousel.Item>
-                  <Card style={{ width: "fluid" }}>
-                    <Img fluid={data.img4.childImageSharp.fluid} />
-                    <Card.Body>
-                      <Card.Title>Card Title</Card.Title>
-                      <Card.Text>
-                        Some quick example text to build on the card title and
-                        make up the bulk of the card's content.
-                      </Card.Text>
-                    </Card.Body>
-                  </Card>
-                </Carousel.Item>
-              </Carousel>
+            <div className="col-8 col-sm-4 mx-auto text-center">
+              <Link to="/">
+                <button className="btn text-uppercase btn-yellow mt-5">
+                  Back to home
+                </button>
+              </Link>
             </div>
           </div>
         </div>
@@ -104,10 +114,7 @@ export const query = graphql`
     img3: file(relativePath: { eq: "wesley-tingey-0are122T4ho-unsplash.jpg" }) {
       ...squareImage
     }
-    img4: file(relativePath: { eq: "sewn-apart-4ytMf8MgJlY-unsplash.jpg" }) {
-      ...squareImage
-    }
   }
 `
 
-export default ServicesPage
+export default Services2Page

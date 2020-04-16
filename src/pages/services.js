@@ -7,7 +7,7 @@ import Title from "../Title"
 import Card from "react-bootstrap/Card"
 import Img from "gatsby-image"
 
-const Services2Page = ({ data }) => {
+const ServicesPage = ({ data }) => {
   // const content = "Do I need an about page????"
   console.log(data)
   return (
@@ -24,7 +24,10 @@ const Services2Page = ({ data }) => {
           <div className="row ">
             <div className="col-10 col-sm-4 mx-auto  mb-3 d-flex">
               <Card>
-                <Img fluid={data.img1.childImageSharp.fluid} />
+                <Img
+                  fluid={data.img2.childImageSharp.fluid}
+                  alt="Snellen Chart;Image by Wesley Tingey from Unsplash.com"
+                />
                 <Card.Body>
                   <Card.Title>
                     <strong>Eye Examinations</strong>
@@ -35,8 +38,8 @@ const Services2Page = ({ data }) => {
                     </p>
                     <ol className="text-left" style={{ fontSize: "small" }}>
                       <li>Prescription Checks</li>
-                      <li>Anterior Eye Examinations</li>
-                      <li>Posterior Eye Examinations</li>
+                      <li>Anterior and Posterior Eye Examinations</li>
+                      <li>Geriatric and Pediatric Eye Screenings</li>
                     </ol>
                   </Card.Text>
                 </Card.Body>
@@ -44,7 +47,10 @@ const Services2Page = ({ data }) => {
             </div>
             <div className="col-10 col-sm-4 mx-auto  mb-3 d-flex">
               <Card>
-                <Img fluid={data.img3.childImageSharp.fluid} />
+                <Img
+                  fluid={data.img3.childImageSharp.fluid}
+                  alt="Man wearing glasses; Image by Norbert Kundrak from Unsplash.com"
+                />
                 <Card.Body>
                   <Card.Title>
                     <strong>Spectacle Services </strong>
@@ -52,7 +58,7 @@ const Services2Page = ({ data }) => {
                   <Card.Text>
                     <p className="text-left" style={{ fontSize: "medium" }}>
                       Prescribe customized spectacles and lenses to suit your
-                      lifestyle needs.
+                      lifestyle needs
                     </p>
                   </Card.Text>
                 </Card.Body>
@@ -60,7 +66,10 @@ const Services2Page = ({ data }) => {
             </div>
             <div className="col-10 col-sm-4 mx-auto  mb-3 d-flex">
               <Card>
-                <Img fluid={data.img2.childImageSharp.fluid} />
+                <Img
+                  fluid={data.img1.childImageSharp.fluid}
+                  alt="Woman putting on contact lenese; Image by Hubble on Unsplash.com"
+                />
                 <Card.Body>
                   <Card.Title>
                     <strong>Contact Lense Consultation And Fitting </strong>
@@ -68,7 +77,7 @@ const Services2Page = ({ data }) => {
                   <Card.Text>
                     <p className="text-left" style={{ fontSize: "medium" }}>
                       Provide and recommend the most suitable contact lenses for
-                      your eyes
+                      your eyes and lifestyle
                     </p>
                   </Card.Text>
                 </Card.Body>
@@ -93,7 +102,7 @@ const Services2Page = ({ data }) => {
 export const squareImage = graphql`
   fragment squareImage on File {
     childImageSharp {
-      fluid(maxWidth: 200, maxHeight: 200) {
+      fluid(maxWidth: 200, maxHeight: 200, quality: 100) {
         ...GatsbyImageSharpFluid
       }
     }
@@ -101,20 +110,20 @@ export const squareImage = graphql`
 `
 export const query = graphql`
   query {
-    img1: file(relativePath: { eq: "jesus-kiteque-wn-KYaHwcis-unsplash.jpg" }) {
+    img1: file(relativePath: { eq: "hubble-ITHqOdrrn0s-unsplash.jpg" }) {
       ...squareImage
     }
 
-    img2: file(
-      relativePath: { eq: "richard-jaimes-4B6-E8c7t9I-unsplash (1).jpg" }
+    img2: file(relativePath: { eq: "wesley-tingey-0are122T4ho-unsplash.jpg" }) {
+      ...squareImage
+    }
+
+    img3: file(
+      relativePath: { eq: "norbert-kundrak-RJ1ZvY2f-2U-unsplash.jpg" }
     ) {
-      ...squareImage
-    }
-
-    img3: file(relativePath: { eq: "wesley-tingey-0are122T4ho-unsplash.jpg" }) {
       ...squareImage
     }
   }
 `
 
-export default Services2Page
+export default ServicesPage

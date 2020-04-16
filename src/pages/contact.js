@@ -15,6 +15,7 @@ const ContactPage = ({ data }) => {
         img={data.img.childImageSharp.fluid}
         title="Contact"
         styleClass="contact-background"
+        alt="Spectacles Silhouette;Image by Jean Gerber from Unsplash.com"
       />
       <section className="py-5">
         <div className="container">
@@ -75,11 +76,9 @@ const ContactPage = ({ data }) => {
 
 export const query = graphql`
   {
-    img: file(
-      relativePath: { eq: "julian-hochgesang-whrR1WQMdBE-unsplash.jpg" }
-    ) {
+    img: file(relativePath: { eq: "jean-gerber-QRU55nh_4X8-unsplash.jpg" }) {
       childImageSharp {
-        fluid {
+        fluid(quality: 100) {
           ...GatsbyImageSharpFluid_tracedSVG
         }
       }

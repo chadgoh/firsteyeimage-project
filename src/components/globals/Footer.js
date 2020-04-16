@@ -1,19 +1,33 @@
 import React from "react"
-
+import { FiPhone, FiMail, FiMapPin } from "react-icons/fi"
 function Footer() {
   return (
     <footer className="footer py-3" id="contact">
       <div className="container">
         <div className="row">
           <div className="col-6 mx-auto col-md-6 text-yellow text-left text-capitalize">
-            <h6>Address</h6>
-            <h6>Contact Number</h6>
-            <h6>Email Adress</h6>
+            <p>
+              <FiPhone className="mr-2" />
+              <a href="tel:+65 6123 5678" className="footer-link">
+                +65 6123 5678
+              </a>
+            </p>
+            <p>
+              <FiMail className="mr-2" />
+              <a
+                href="mailto: Firsteyesimage@gmail.com"
+                className="footer-link"
+              >
+                Firsteyesimage@gmail.com
+              </a>
+            </p>
+            <p>
+              <FiMapPin className="mr-2" />
+              #03-72 Far East Plaza, 14 Scotts Rd, 228213
+            </p>
           </div>
           <div className="col-6 mx-auto col-md-6 text-yellow text-left text-capitalize">
-            <h6>
-              All rights reserved &copy;{new Date().getFullYear().toString()}
-            </h6>
+            <h6>Copyright &copy; 2020 All Rights Reserved</h6>
           </div>
         </div>
       </div>

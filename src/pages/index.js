@@ -15,6 +15,7 @@ const IndexPage = ({ data }) => {
         img={data.img.childImageSharp.fluid}
         title="First Eye Image"
         styleClass="default-background"
+        alt="Dog wearing glasses; Image by Jamie Street From Unsplash.com"
       />
       <section className="py-5">
         <div className="container">

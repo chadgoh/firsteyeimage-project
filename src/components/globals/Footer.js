@@ -5,7 +5,7 @@ function Footer() {
     <footer className="footer py-3" id="contact">
       <div className="container">
         <div className="row">
-          <div className="col-6 mx-auto col-md-6 text-yellow text-left text-capitalize">
+          <div className="col-12 mx-auto col-sm-6 text-yellow text-left text-capitalize">
             <p>
               <FiPhone className="mr-2" />
               <a href="tel:+65 6123 5678" className="footer-link">
@@ -26,7 +26,7 @@ function Footer() {
               #03-72 Far East Plaza, 14 Scotts Rd, 228213
             </p>
           </div>
-          <div className="col-6 mx-auto col-md-6 text-yellow text-left text-capitalize">
+          <div className="col-12 mx-auto col-sm-6 text-yellow text-left text-capitalize">
             <h6>Copyright &copy; 2020 All Rights Reserved</h6>
           </div>
         </div>

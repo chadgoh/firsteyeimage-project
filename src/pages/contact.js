@@ -32,12 +32,12 @@ const ContactPage = ({ data }) => {
               </p>
               <p>
                 <FiPhone className="mr-2" />
-                <a href="tel:+65 6123 5678">+65 6123 5678</a>
+                <a href="tel:+65 6732 3180">+65 6732 3180</a>
               </p>
               <p>
                 <FiMail className="mr-2" />
-                <a href="mailto: Firsteyesimage@gmail.com">
-                  Firsteyesimage@gmail.com
+                <a href="mailto: firsteyesimage@gmail.com">
+                  firsteyesimage@gmail.com
                 </a>
               </p>
             </div>

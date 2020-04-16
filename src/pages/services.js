@@ -86,9 +86,9 @@ const ServicesPage = ({ data }) => {
           </div>
           <div className="row">
             <div className="col-8 col-sm-4 mx-auto text-center">
-              <Link to="/">
+              <Link to="/contact">
                 <button className="btn text-uppercase btn-yellow mt-5">
-                  Back to home
+                  Contact us now!
                 </button>
               </Link>
             </div>

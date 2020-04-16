@@ -23,9 +23,9 @@ const IndexPage = ({ data }) => {
           <div className="row">
             <div className="col-10 col-sm-8 mx-auto text-center">
               <p className="lead text-muted mb-5">{content}</p>
-              <Link to="/contact/">
+              <Link to="/services">
                 <button className="btn text-uppercase btn-yellow">
-                  Contact Us
+                  Our services
                 </button>
               </Link>
             </div>

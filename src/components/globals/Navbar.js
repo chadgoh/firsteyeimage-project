@@ -28,8 +28,11 @@ function Navbar() {
     <>
       <nav className="navbar navbar-expand-sm bg-light navbar-light">
         <Link to="/" className="navbar-brand">
-          <img src={logo} alt="Spectacle Logo" style={{ height: "30px" }} />
-          {/* Icon made by Freepik from www.flaticon.com */}
+          <img
+            src={logo}
+            alt="Spectacle Logo;Icon made by Freepik from www.flaticon.com"
+            style={{ height: "30px" }}
+          />
         </Link>
         <button className="navbar-toggler" type="button" onClick={handleNavBar}>
           <span className="navbar-toggler-icon" />
@@ -45,7 +48,10 @@ function Navbar() {
             {links.map(link => {
               return (
                 <li key={link.id} className="nav-item">
-                  <Link to={link.path} className="nav-link text-capitalize">
+                  <Link
+                    to={link.path}
+                    className="nav-link text-capitalize font-weight-bold"
+                  >
                     {link.text}
                   </Link>
                 </li>

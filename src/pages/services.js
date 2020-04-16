@@ -36,7 +36,10 @@ const ServicesPage = ({ data }) => {
                     <p className="text-left" style={{ fontSize: "medium" }}>
                       We provide comprehensive eye examinations that include:
                     </p>
-                    <ol className="text-left" style={{ fontSize: "medium" }}>
+                    <ol
+                      className="text-left"
+                      style={{ fontSize: "medium", paddingLeft: "1rem" }}
+                    >
                       <li>Prescription Checks</li>
                       <li>Anterior and Posterior Eye Examinations</li>
                       <li>Geriatric and Pediatric Eye Screenings</li>
@@ -91,7 +94,7 @@ const ServicesPage = ({ data }) => {
             <div className="col-8 col-sm-4 mx-auto text-center">
               <Link to="/contact">
                 <button className="btn text-uppercase btn-yellow mt-5">
-                  Contact us now!
+                  Contact us
                 </button>
               </Link>
             </div>

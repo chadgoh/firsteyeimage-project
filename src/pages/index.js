@@ -13,7 +13,7 @@ const IndexPage = ({ data }) => {
       <SEO title="Home" />
       <BackgroundHero
         img={data.img.childImageSharp.fluid}
-        title="First Eye Image"
+        title="First Eyes Image"
         styleClass="default-background"
         alt="Dog wearing glasses; Image by Jamie Street From Unsplash.com"
       />

@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
-    title: `FirstEye Image`,
-    description: `FirstEye Image Pte. Ltd`,
+    title: `FirstEyes Image`,
+    description: `FirstEyes Image Pte. Ltd`,
     author: `Chad Goh`,
   },
   plugins: [

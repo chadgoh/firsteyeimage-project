@@ -1,13 +1,21 @@
 import React from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import { graphql, Link } from "gatsby"
+import { graphql, Link, useStaticQuery } from "gatsby"
 import BackgroundHero from "../components/BackgroundHero"
 import { FiPhone, FiMail, FiMapPin } from "react-icons/fi"
+import { AiOutlineClockCircle } from "react-icons/ai"
 // import Title from "../Title"
 
 const ContactPage = ({ data }) => {
-  // const content = "Do I need an about page????"
+  const isItSunday = () => {
+    if (new Date().getDay() === 0) {
+      return true
+    } else {
+      return false
+    }
+  }
+
   return (
     <Layout>
       <SEO title="Contact" />
@@ -57,6 +65,17 @@ const ContactPage = ({ data }) => {
                 <FiMapPin className="mr-2" />
                 #03-72 Far East Plaza, 14 Scotts Rd, 228213
               </p>
+
+              <div
+                className={`row mb-2 ${isItSunday() ? "" : "font-weight-bold"}`}
+              >
+                <div className="col-12">Monday - Saturday </div>
+                <div className="col-12"> 10:30am - 07:50pm</div>
+              </div>
+              <div className={`row ${isItSunday() ? "font-weight-bold" : ""}`}>
+                <div className="col-12 ">Sunday </div>
+                <div className="col-12 "> 11:00am - 07:00pm</div>
+              </div>
             </div>
           </div>
           <div className="row">

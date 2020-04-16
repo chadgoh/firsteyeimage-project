@@ -29,14 +29,14 @@ const ServicesPage = ({ data }) => {
                   alt="Snellen Chart;Image by Wesley Tingey from Unsplash.com"
                 />
                 <Card.Body>
-                  <Card.Title>
+                  <Card.Title className="text-center">
                     <strong>Eye Examinations</strong>
                   </Card.Title>
                   <Card.Text>
                     <p className="text-left" style={{ fontSize: "medium" }}>
                       We provide comprehensive eye examinations that include:
                     </p>
-                    <ol className="text-left" style={{ fontSize: "small" }}>
+                    <ol className="text-left" style={{ fontSize: "medium" }}>
                       <li>Prescription Checks</li>
                       <li>Anterior and Posterior Eye Examinations</li>
                       <li>Geriatric and Pediatric Eye Screenings</li>
@@ -52,12 +52,12 @@ const ServicesPage = ({ data }) => {
                   alt="Man wearing glasses; Image by Norbert Kundrak from Unsplash.com"
                 />
                 <Card.Body>
-                  <Card.Title>
+                  <Card.Title className="text-center">
                     <strong>Spectacle Services </strong>
                   </Card.Title>
                   <Card.Text>
                     <p className="text-left" style={{ fontSize: "medium" }}>
-                      Prescribe customized spectacles and lenses to suit your
+                      We prescribe customized spectacles and lenses to suit your
                       lifestyle needs
                     </p>
                   </Card.Text>
@@ -71,13 +71,16 @@ const ServicesPage = ({ data }) => {
                   alt="Woman putting on contact lenese; Image by Hubble on Unsplash.com"
                 />
                 <Card.Body>
-                  <Card.Title>
-                    <strong>Contact Lense Consultation And Fitting </strong>
+                  <Card.Title className="text-center">
+                    <strong>
+                      Contact Lense <br />
+                      Consultation And Fitting{" "}
+                    </strong>
                   </Card.Title>
                   <Card.Text>
                     <p className="text-left" style={{ fontSize: "medium" }}>
-                      Provide and recommend the most suitable contact lenses for
-                      your eyes and lifestyle
+                      We will provide and recommend the most suitable contact
+                      lenses for your eyes and lifestyle
                     </p>
                   </Card.Text>
                 </Card.Body>
@@ -118,9 +121,7 @@ export const query = graphql`
       ...squareImage
     }
 
-    img3: file(
-      relativePath: { eq: "norbert-kundrak-RJ1ZvY2f-2U-unsplash.jpg" }
-    ) {
+    img3: file(relativePath: { eq: "scott-van-daalen-unsplash.jpg" }) {
       ...squareImage
     }
   }

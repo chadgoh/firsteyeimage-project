@@ -12,6 +12,14 @@ body {
   font-family: Verdana, Geneva, Tahoma, sans-serif !important;
 }
 
+a {
+  color: var(--mainYellow);
+}
+
+a:hover {
+  color: var(--mainBrown);
+}
+
 h1,
 h2,
 h3,

@@ -14,6 +14,16 @@ function Navbar() {
       path: "/contact",
       text: "Contact",
     },
+    {
+      id: 3,
+      path: "/services",
+      text: "Services",
+    },
+    {
+      id: 2,
+      path: "/services2",
+      text: "Services2",
+    },
   ])
 
   const handleNavBar = () => {

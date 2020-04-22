@@ -39,8 +39,9 @@ const IndexPage = ({ data }) => {
                   <a href="mailto: firsteyesimage@gmail.com">email</a>. You can
                   also drop us a message on{" "}
                   <a
+                    rel="noopener noreferrer"
                     href="https://www.facebook.com/FirstEyesimage/"
-                    tartget="_blank"
+                    target="_blank"
                   >
                     Facebook
                   </a>

@@ -49,7 +49,11 @@ const ContactPage = ({ data }) => {
               </p>
               <p>
                 <FiFacebook className="mr-2" />
-                <a href="https://www.facebook.com/FirstEyesimage/">
+                <a
+                  rel="noopener noreferrer"
+                  href="https://www.facebook.com/FirstEyesimage/"
+                  target="_blank"
+                >
                   www.facebook.com/firsteyesimage
                 </a>
               </p>

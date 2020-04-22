@@ -1,11 +1,9 @@
 import React from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import { graphql, Link, useStaticQuery } from "gatsby"
+import { graphql, Link } from "gatsby"
 import BackgroundHero from "../components/BackgroundHero"
-import { FiPhone, FiMail, FiMapPin } from "react-icons/fi"
-import { AiOutlineClockCircle } from "react-icons/ai"
-// import Title from "../Title"
+import { FiPhone, FiMail, FiMapPin, FiFacebook } from "react-icons/fi"
 
 const ContactPage = ({ data }) => {
   const isItSunday = () => {
@@ -19,6 +17,7 @@ const ContactPage = ({ data }) => {
   return (
     <Layout>
       <SEO title="Contact" />
+
       <BackgroundHero
         img={data.img.childImageSharp.fluid}
         title="Contact"
@@ -46,6 +45,12 @@ const ContactPage = ({ data }) => {
                 <FiMail className="mr-2" />
                 <a href="mailto: firsteyesimage@gmail.com">
                   firsteyesimage@gmail.com
+                </a>
+              </p>
+              <p>
+                <FiFacebook className="mr-2" />
+                <a href="https://www.facebook.com/FirstEyesimage/">
+                  www.facebook.com/firsteyesimage
                 </a>
               </p>
             </div>

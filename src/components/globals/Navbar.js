@@ -1,6 +1,7 @@
 import React, { useState } from "react"
 import { Link } from "gatsby"
 import logo from "../../images/spectacles.svg"
+
 function Navbar() {
   const [navBarOpen, setNavBarOpen] = useState(false)
   const [links] = useState([
@@ -34,6 +35,7 @@ function Navbar() {
             style={{ height: "30px" }}
           />
         </Link>
+
         <button className="navbar-toggler" type="button" onClick={handleNavBar}>
           <span className="navbar-toggler-icon" />
         </button>

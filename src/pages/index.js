@@ -66,7 +66,7 @@ const IndexPage = ({ data }) => {
           img={data.img.childImageSharp.fluid}
           title="First Eyes Image"
           styleClass="default-background"
-          alt="Dog wearing glasses; Image by Jamie Street From Unsplash.com"
+          alt="Dog wearing glasses; Image by BBH Singapore On Unsplash.com"
         />
         <section className="py-5">
           <div className="container">
@@ -90,10 +90,10 @@ const IndexPage = ({ data }) => {
 
 export const query = graphql`
   {
-    img: file(relativePath: { eq: "jamie-street-MoDcnVRN5JU-unsplash.jpg" }) {
+    img: file(relativePath: { eq: "bbh-singapore.jpg" }) {
       childImageSharp {
-        fluid {
-          ...GatsbyImageSharpFluid_tracedSVG
+        fluid(maxWidth: 800, quality: 100) {
+          ...GatsbyImageSharpFluid
         }
       }
     }

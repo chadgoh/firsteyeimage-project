@@ -10,14 +10,14 @@ import { setConfig } from "react-hot-loader"
 //https://icetutor.com/question/react-hot-loader-react-%F0%9F%94%A5-dom-patch-is-not-detected/
 setConfig({ showReactDomPatchNotification: false })
 const IndexPage = ({ data }) => {
-  const [hideAlert, setHideAlert] = useState(false)
+  // const [hideAlert, setHideAlert] = useState(false)
 
   const content =
     "Our professional optometrist has more than 40 years of experience. Our services include eye exams, geriatric, paediatric, prescription and sports eyewear and contact lenses. We also stock the latest fashion brands at affordable prices."
 
   return (
     <>
-      <div hidden={hideAlert} className="mt-3 mx-1">
+      {/* <div hidden={hideAlert} className="mt-3 mx-1">
         <div className="container-fluid">
           <Alert
             variant="success"
@@ -59,7 +59,7 @@ const IndexPage = ({ data }) => {
             </div>
           </Alert>
         </div>
-      </div>
+      </div> */}
       <Layout>
         <SEO title="Home" />
         <BackgroundHero

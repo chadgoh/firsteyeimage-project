@@ -1,10 +1,10 @@
-import React, { useState } from "react"
+import React from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { graphql, Link } from "gatsby"
 import BackgroundHero from "../components/BackgroundHero"
 import Title from "../Title"
-import Alert from "react-bootstrap/Alert"
+
 import { setConfig } from "react-hot-loader"
 
 //https://icetutor.com/question/react-hot-loader-react-%F0%9F%94%A5-dom-patch-is-not-detected/
@@ -17,49 +17,6 @@ const IndexPage = ({ data }) => {
 
   return (
     <>
-      {/* <div hidden={hideAlert} className="mt-3 mx-1">
-        <div className="container-fluid">
-          <Alert
-            variant="success"
-            className="fontSize: small"
-            onClose={() => setHideAlert(true)}
-            dismissible
-          >
-            <div className="row">
-              <div className="col col-12 col-sm-6">
-                <p>
-                  Due to covid-19 and the Circuit Breaker measures, will be
-                  rendering our services for sales of contact lenses,
-                  prescription glasses, and optometry services by{" "}
-                  <strong> appointment only</strong>.
-                </p>
-                <p>
-                  Appointments can be made via{" "}
-                  <a href="tel:+65 8799 2893">phone</a> or{" "}
-                  <a href="mailto: firsteyesimage@gmail.com">email</a>. You can
-                  also drop us a message on{" "}
-                  <a
-                    rel="noopener noreferrer"
-                    href="https://www.facebook.com/FirstEyesimage/"
-                    target="_blank"
-                  >
-                    Facebook
-                  </a>
-                  .
-                </p>
-              </div>
-              <div className="col col-12 col-sm-6">
-                We will also be changing our operating hours to:
-                <ul>
-                  <li>Monday to Saturday: 11AM to 6PM</li>
-                  <li>Closed on Sundays and Public Holidays</li>
-                </ul>
-                <p>Thank you and may we overcome this together #sgunited</p>
-              </div>
-            </div>
-          </Alert>
-        </div>
-      </div> */}
       <Layout>
         <SEO title="Home" />
         <BackgroundHero

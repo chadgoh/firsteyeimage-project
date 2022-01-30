@@ -27,7 +27,7 @@ function Footer() {
             </p>
           </div>
           <div className="col-12 mx-auto col-sm-6 text-yellow text-left text-capitalize">
-            <h6>Copyright &copy; 2020 All Rights Reserved</h6>
+            <h6>Copyright &copy; {new Date().getFullYear()} All Rights Reserved</h6>
           </div>
         </div>
       </div>
